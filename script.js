@@ -34,7 +34,8 @@ function generateMessage() {
   const part2 = getRandomElement(actions);
   const part3 = getRandomElement(advice);
   
-  return `${part1} ${part2}. ${part3}`;
+  const message = `${part1} ${part2}. ${part3}`;
+  document.getElementById("message").textContent = message;
 }
 
 // Output message
